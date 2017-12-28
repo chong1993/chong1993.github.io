@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>1226学习笔记 | 江冲的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一.如何直接在编码器中修改桌面文件？1.右键点击git bash here；2.输入ls查看桌面文件；3.输入touch 文件名.格式（例如：a.txt）；4.输入vi 文件名.格式；；5.输入i（插入），在输入想书写的内容；6.保存：esc键+：键+w+q键；7.window+r键输入cmd进入程序界面，输入cd 存放路径（例如桌面：desktop  cd desktop)；注释：cd ..（释">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1226学习笔记">
+<meta property="og:url" content="http://www.baidu.com/2017/12/26/1226笔记/index.html">
+<meta property="og:site_name" content="江冲的博客">
+<meta property="og:description" content="一.如何直接在编码器中修改桌面文件？1.右键点击git bash here；2.输入ls查看桌面文件；3.输入touch 文件名.格式（例如：a.txt）；4.输入vi 文件名.格式；；5.输入i（插入），在输入想书写的内容；6.保存：esc键+：键+w+q键；7.window+r键输入cmd进入程序界面，输入cd 存放路径（例如桌面：desktop  cd desktop)；注释：cd ..（释">
+<meta property="og:image" content="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=360824340,931715792&fm=27&gp=0.jpg">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1514395971806&di=286cdcaed88d1fe9215709b5d1801717&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201501%2F01%2F20150101205809_nGEty.gif">
+<meta property="og:updated_time" content="2017-12-27T14:46:30.871Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="1226学习笔记">
+<meta name="twitter:description" content="一.如何直接在编码器中修改桌面文件？1.右键点击git bash here；2.输入ls查看桌面文件；3.输入touch 文件名.格式（例如：a.txt）；4.输入vi 文件名.格式；；5.输入i（插入），在输入想书写的内容；6.保存：esc键+：键+w+q键；7.window+r键输入cmd进入程序界面，输入cd 存放路径（例如桌面：desktop  cd desktop)；注释：cd ..（释">
+<meta name="twitter:image" content="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=360824340,931715792&fm=27&gp=0.jpg">
+  
+    <link rel="alternative" href="/atom.xml" title="江冲的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/tx.jpg">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/tx.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">chong jiang</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">加油！</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/works">作品</a></li>
+                        
+                            <li><a href="/about">留言打卡</a></li>
+                        
+                            <li><a href="/FrontEndGuide">前端导航</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="http://weibo.com/xinghunpodong" title="weibo">weibo</a>
+                            
+                                <a class="fl google" target="_blank" href="#" title="google">google</a>
+                            
+                                <a class="fl twitter" target="_blank" href="#" title="twitter">twitter</a>
+                            
+                                <a class="fl linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://luuman.github.io/">name</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">chong jiang</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/tx.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">chong jiang</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">加油！</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/works">作品</a></li>
+                
+                    <li><a href="/about">留言打卡</a></li>
+                
+                    <li><a href="/FrontEndGuide">前端导航</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="http://weibo.com/xinghunpodong" title="weibo">weibo</a>
+                    
+                        <a class="google" target="_blank" href="#" title="google">google</a>
+                    
+                        <a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
+                    
+                        <a class="linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-1226笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/12/26/1226笔记/" class="article-date">
+      <time datetime="2017-12-26T08:35:35.000Z" itemprop="datePublished">2017-12-26</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      1226学习笔记
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="一-如何直接在编码器中修改桌面文件？"><a href="#一-如何直接在编码器中修改桌面文件？" class="headerlink" title="一.如何直接在编码器中修改桌面文件？"></a>一.如何直接在编码器中修改桌面文件？</h1><h3 id="1-右键点击git-bash-here；"><a href="#1-右键点击git-bash-here；" class="headerlink" title="1.右键点击git bash here；"></a>1.右键点击git bash here；</h3><h3 id="2-输入ls查看桌面文件；"><a href="#2-输入ls查看桌面文件；" class="headerlink" title="2.输入ls查看桌面文件；"></a>2.输入ls查看桌面文件；</h3><h3 id="3-输入touch-文件名-格式（例如：a-txt）；"><a href="#3-输入touch-文件名-格式（例如：a-txt）；" class="headerlink" title="3.输入touch 文件名.格式（例如：a.txt）；"></a>3.输入touch 文件名.格式（例如：a.txt）；</h3><h3 id="4-输入vi-文件名-格式；；"><a href="#4-输入vi-文件名-格式；；" class="headerlink" title="4.输入vi 文件名.格式；；"></a>4.输入vi 文件名.格式；；</h3><h3 id="5-输入i（插入），在输入想书写的内容；"><a href="#5-输入i（插入），在输入想书写的内容；" class="headerlink" title="5.输入i（插入），在输入想书写的内容；"></a>5.输入i（插入），在输入想书写的内容；</h3><h3 id="6-保存：esc键-：键-w-q键；"><a href="#6-保存：esc键-：键-w-q键；" class="headerlink" title="6.保存：esc键+：键+w+q键；"></a>6.保存：esc键+：键+w+q键；</h3><h3 id="7-window-r键输入cmd进入程序界面，输入cd-存放路径（例如桌面：desktop-cd-desktop-；"><a href="#7-window-r键输入cmd进入程序界面，输入cd-存放路径（例如桌面：desktop-cd-desktop-；" class="headerlink" title="7.window+r键输入cmd进入程序界面，输入cd 存放路径（例如桌面：desktop  cd desktop)；"></a>7.window+r键输入cmd进入程序界面，输入cd 存放路径（例如桌面：desktop  cd desktop)；</h3><h4 id="注释：cd-（释义：返回上一级）"><a href="#注释：cd-（释义：返回上一级）" class="headerlink" title="注释：cd ..（释义：返回上一级）"></a>注释：cd ..（释义：返回上一级）</h4><hr>
+<h1 id="二-如何使用hexo-node-gif搭建个人博客？"><a href="#二-如何使用hexo-node-gif搭建个人博客？" class="headerlink" title="二.如何使用hexo+node+gif搭建个人博客？"></a>二.如何使用hexo+node+gif搭建个人博客？</h1><h2 id="1-环境-工具"><a href="#1-环境-工具" class="headerlink" title="1.环境/工具"></a>1.环境/工具</h2><h3 id="1-1、node：一款牛叉的web服务器，目前很多大型项目都使用node搭建；"><a href="#1-1、node：一款牛叉的web服务器，目前很多大型项目都使用node搭建；" class="headerlink" title="1.1、node：一款牛叉的web服务器，目前很多大型项目都使用node搭建；"></a>1.1、node：一款牛叉的web服务器，目前很多大型项目都使用node搭建；</h3><h3 id="1-2、特点：解析效率高，没有兼容性，比较适合io密集型的项目；"><a href="#1-2、特点：解析效率高，没有兼容性，比较适合io密集型的项目；" class="headerlink" title="1.2、特点：解析效率高，没有兼容性，比较适合io密集型的项目；"></a>1.2、特点：解析效率高，没有兼容性，比较适合io密集型的项目；</h3><h3 id="1-3版本：建议版本是6-19（比较稳定，兼容性好）；"><a href="#1-3版本：建议版本是6-19（比较稳定，兼容性好）；" class="headerlink" title="1.3版本：建议版本是6.19（比较稳定，兼容性好）；"></a>1.3版本：建议版本是6.19（比较稳定，兼容性好）；</h3><h2 id="2-如何安装"><a href="#2-如何安装" class="headerlink" title="2.如何安装"></a>2.如何安装</h2><h3 id="2-1、点击https-nodejs-org-下载node-vscode-多语言开发工具-git-版本控制器-相应操作系统的安装包，安装过程可以一直按下一步；"><a href="#2-1、点击https-nodejs-org-下载node-vscode-多语言开发工具-git-版本控制器-相应操作系统的安装包，安装过程可以一直按下一步；" class="headerlink" title="2.1、点击https://nodejs.org 下载node/vscode(多语言开发工具)/git(版本控制器)相应操作系统的安装包，安装过程可以一直按下一步；"></a>2.1、点击<a href="https://nodejs.org" target="_blank" rel="noopener">https://nodejs.org</a> 下载node/vscode(多语言开发工具)/git(版本控制器)相应操作系统的安装包，安装过程可以一直按下一步；</h3><h2 id="3-如何测试nede是否安装成功"><a href="#3-如何测试nede是否安装成功" class="headerlink" title="3.如何测试nede是否安装成功"></a>3.如何测试nede是否安装成功</h2><h3 id="3-1、首先win键-R输入cmd回车（enter键），在打开的编码窗口中命令输入-node-v-，如果能显示node版本则安装成功，否则重新安装；"><a href="#3-1、首先win键-R输入cmd回车（enter键），在打开的编码窗口中命令输入-node-v-，如果能显示node版本则安装成功，否则重新安装；" class="headerlink" title="3.1、首先win键+R输入cmd回车（enter键），在打开的编码窗口中命令输入 node -v ，如果能显示node版本则安装成功，否则重新安装；"></a>3.1、首先win键+R输入cmd回车（enter键），在打开的编码窗口中命令输入 node -v ，如果能显示node版本则安装成功，否则重新安装；</h3><h2 id="4-如何安装hexo脚手架"><a href="#4-如何安装hexo脚手架" class="headerlink" title="4.如何安装hexo脚手架"></a>4.如何安装hexo脚手架</h2><h3 id="4-1、Window键-R输入-cmd并回车（enter键）；"><a href="#4-1、Window键-R输入-cmd并回车（enter键）；" class="headerlink" title="4.1、Window键+R输入 cmd并回车（enter键）；"></a>4.1、Window键+R输入 cmd并回车（enter键）；</h3><h3 id="4-2、在cmd回车后弹出的编码窗口中输入-npm-install-g-hexo-cli"><a href="#4-2、在cmd回车后弹出的编码窗口中输入-npm-install-g-hexo-cli" class="headerlink" title="4.2、在cmd回车后弹出的编码窗口中输入 npm install -g hexo-cli"></a>4.2、在cmd回车后弹出的编码窗口中输入 npm install -g hexo-cli</h3><h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4><h5 id="a、npm：依赖包管理工具"><a href="#a、npm：依赖包管理工具" class="headerlink" title="a、npm：依赖包管理工具"></a>a、npm：依赖包管理工具</h5><h5 id="b、install：导入-安装"><a href="#b、install：导入-安装" class="headerlink" title="b、install：导入/安装"></a>b、install：导入/安装</h5><h5 id="c、-g：全局安装"><a href="#c、-g：全局安装" class="headerlink" title="c、-g：全局安装"></a>c、-g：全局安装</h5><h2 id="5-如何初始化一个博客项目"><a href="#5-如何初始化一个博客项目" class="headerlink" title="5.如何初始化一个博客项目"></a>5.如何初始化一个博客项目</h2><h3 id="5-1、hexo-init-项目名称-英文）；"><a href="#5-1、hexo-init-项目名称-英文）；" class="headerlink" title="5.1、hexo init 项目名称(英文）；"></a>5.1、hexo init 项目名称(英文）；</h3><h4 id="注：init-初始化"><a href="#注：init-初始化" class="headerlink" title="注：init 初始化"></a>注：init 初始化</h4><h2 id="6-如何进入项目并添加依赖包"><a href="#6-如何进入项目并添加依赖包" class="headerlink" title="6.如何进入项目并添加依赖包"></a>6.如何进入项目并添加依赖包</h2><h4 id="（如果在拷贝文件时，一定要先将文件夹中node-modules文件夹删除，并重新添加依赖包）"><a href="#（如果在拷贝文件时，一定要先将文件夹中node-modules文件夹删除，并重新添加依赖包）" class="headerlink" title="（如果在拷贝文件时，一定要先将文件夹中node_modules文件夹删除，并重新添加依赖包）"></a>（如果在拷贝文件时，一定要先将文件夹中node_modules文件夹删除，并重新添加依赖包）</h4><h3 id="6-1、先进入到项目主目录文件夹；"><a href="#6-1、先进入到项目主目录文件夹；" class="headerlink" title="6.1、先进入到项目主目录文件夹；"></a>6.1、先进入到项目主目录文件夹；</h3><h3 id="6-2、选中文件夹并点击鼠标右键git-bash-here-；"><a href="#6-2、选中文件夹并点击鼠标右键git-bash-here-；" class="headerlink" title="6.2、选中文件夹并点击鼠标右键git bash here ；"></a>6.2、选中文件夹并点击鼠标右键git bash here ；</h3><h3 id="6-3、再弹出编码窗口后，使用npm-install命令添加依赖包；"><a href="#6-3、再弹出编码窗口后，使用npm-install命令添加依赖包；" class="headerlink" title="6.3、再弹出编码窗口后，使用npm install命令添加依赖包；"></a>6.3、再弹出编码窗口后，使用npm install命令添加依赖包；</h3><h4 id="目的：将项目所需依赖包添加到本地"><a href="#目的：将项目所需依赖包添加到本地" class="headerlink" title="目的：将项目所需依赖包添加到本地"></a>目的：将项目所需依赖包添加到本地</h4><h2 id="7-如何启动node服务器并打开博客网页"><a href="#7-如何启动node服务器并打开博客网页" class="headerlink" title="7.如何启动node服务器并打开博客网页"></a>7.如何启动node服务器并打开博客网页</h2><h3 id="方式一：7-1、选中博客文件夹右键-git-bash-here；"><a href="#方式一：7-1、选中博客文件夹右键-git-bash-here；" class="headerlink" title="方式一：7.1、选中博客文件夹右键 git bash here；"></a>方式一：7.1、选中博客文件夹右键 git bash here；</h3><h4 id="7-2、在弹出的编码框中输入-hexo-server；"><a href="#7-2、在弹出的编码框中输入-hexo-server；" class="headerlink" title="7.2、在弹出的编码框中输入 hexo server；"></a>7.2、在弹出的编码框中输入 hexo server；</h4><h4 id="7-3、在浏览器地址栏输入：localhost：4000回车浏览；"><a href="#7-3、在浏览器地址栏输入：localhost：4000回车浏览；" class="headerlink" title="7.3、在浏览器地址栏输入：localhost：4000回车浏览；"></a>7.3、在浏览器地址栏输入：localhost：4000回车浏览；</h4><h5 id="注：在打开页面时，服务器不能处在关闭状态（快捷键ctrl-c停止服务器）；"><a href="#注：在打开页面时，服务器不能处在关闭状态（快捷键ctrl-c停止服务器）；" class="headerlink" title="注：在打开页面时，服务器不能处在关闭状态（快捷键ctrl+c停止服务器）；"></a>注：在打开页面时，服务器不能处在关闭状态（快捷键ctrl+c停止服务器）；</h5><h3 id="方式二：在visual-studio软件中按快捷键-ctrl-键调出编码框，输入代码hexo-s-按回车键；"><a href="#方式二：在visual-studio软件中按快捷键-ctrl-键调出编码框，输入代码hexo-s-按回车键；" class="headerlink" title="方式二：在visual studio软件中按快捷键 ctrl + ~ 键调出编码框，输入代码hexo s 按回车键；"></a>方式二：在visual studio软件中按快捷键 ctrl + ~ 键调出编码框，输入代码hexo s 按回车键；</h3><h2 id="8-如何对博客页面中的一些内容进行修改"><a href="#8-如何对博客页面中的一些内容进行修改" class="headerlink" title="8.如何对博客页面中的一些内容进行修改"></a>8.如何对博客页面中的一些内容进行修改</h2><h3 id="8-1、首先打开visual-syudio软件，按快捷键-ctrl-键调出编码框，按-按钮新建一个编码窗口，在新建的编码窗口中输入hexo-new-文章名并按回车（例如：hexo-new-我的第一篇博客）；"><a href="#8-1、首先打开visual-syudio软件，按快捷键-ctrl-键调出编码框，按-按钮新建一个编码窗口，在新建的编码窗口中输入hexo-new-文章名并按回车（例如：hexo-new-我的第一篇博客）；" class="headerlink" title="8.1、首先打开visual syudio软件，按快捷键 ctrl + ~ 键调出编码框，按+按钮新建一个编码窗口，在新建的编码窗口中输入hexo new 文章名并按回车（例如：hexo new 我的第一篇博客）；"></a>8.1、首先打开visual syudio软件，按快捷键 ctrl + ~ 键调出编码框，按+按钮新建一个编码窗口，在新建的编码窗口中输入hexo new 文章名并按回车（例如：hexo new 我的第一篇博客）；</h3><h3 id="8-2、对文章的标题可以进行修改（title中的内容，注意—之上的内容之间均有空格键，例如：titile-1226学习笔记；-8-3、对修改的文章，按住ctrl-s键保存后刷新博客页面，也可以在编码框中输入-hexo-g并回车（编译）；"><a href="#8-2、对文章的标题可以进行修改（title中的内容，注意—之上的内容之间均有空格键，例如：titile-1226学习笔记；-8-3、对修改的文章，按住ctrl-s键保存后刷新博客页面，也可以在编码框中输入-hexo-g并回车（编译）；" class="headerlink" title="8.2、对文章的标题可以进行修改（title中的内容，注意—之上的内容之间均有空格键，例如：titile 1226学习笔记；### 8.3、对修改的文章，按住ctrl+s键保存后刷新博客页面，也可以在编码框中输入 hexo g并回车（编译）；"></a>8.2、对文章的标题可以进行修改（title中的内容，注意—之上的内容之间均有空格键，例如：titile 1226学习笔记；### 8.3、对修改的文章，按住ctrl+s键保存后刷新博客页面，也可以在编码框中输入 hexo g并回车（编译）；</h3><h4 id="注：浏览器刷新页面快捷键-ctrl-R"><a href="#注：浏览器刷新页面快捷键-ctrl-R" class="headerlink" title="注：浏览器刷新页面快捷键 ctrl+R"></a>注：浏览器刷新页面快捷键 ctrl+R</h4><hr>
+<h1 id="三-markdown的语法"><a href="#三-markdown的语法" class="headerlink" title="三.markdown的语法"></a>三.markdown的语法</h1><h2 id="1、-符号"><a href="#1、-符号" class="headerlink" title="1、#符号"></a>1、#符号</h2><h3 id="空格：有几个-号就是几级标题-例如三级标题-空格-；"><a href="#空格：有几个-号就是几级标题-例如三级标题-空格-；" class="headerlink" title="#+空格：有几个#号就是几级标题(例如三级标题 ###+空格)；"></a>#+空格：有几个#号就是几级标题(例如三级标题 ###+空格)；</h3><h2 id="2、-符号"><a href="#2、-符号" class="headerlink" title="2、-符号"></a>2、-符号</h2><h3 id="空格：无序列表；"><a href="#空格：无序列表；" class="headerlink" title="- + 空格：无序列表；"></a>- + 空格：无序列表；</h3><h2 id="3、1"><a href="#3、1" class="headerlink" title="3、1."></a>3、1.</h2><h3 id="1-空格：有序列表；"><a href="#1-空格：有序列表；" class="headerlink" title="1. + 空格：有序列表；"></a>1. + 空格：有序列表；</h3><h4 id="（例如：1-列表项1-1-列表项2-1-列表项3所显示出的效果为1-列表项1-2-列表项2-3-列表项3）；"><a href="#（例如：1-列表项1-1-列表项2-1-列表项3所显示出的效果为1-列表项1-2-列表项2-3-列表项3）；" class="headerlink" title="（例如：1. 列表项1/1. 列表项2/1. 列表项3所显示出的效果为1.列表项1/2.列表项2/3.列表项3）；"></a>（例如：1. 列表项1/1. 列表项2/1. 列表项3所显示出的效果为1.列表项1/2.列表项2/3.列表项3）；</h4><h5 id="注：1-后面一定要加空格"><a href="#注：1-后面一定要加空格" class="headerlink" title="注：1.后面一定要加空格"></a>注：1.后面一定要加空格</h5><h2 id="4、超链接"><a href="#4、超链接" class="headerlink" title="4、超链接"></a>4、超链接</h2><h3 id="4-1、内容-例如跳转到百度"><a href="#4-1、内容-例如跳转到百度" class="headerlink" title="4.1、内容  例如跳转到百度"></a>4.1、<a href="网址">内容</a>  例如<a href="https://www.baidu.com">跳转到百度</a></h3><h3 id="4-2、可以直接将图片弄到博客里面【格式：-图片地址-】"><a href="#4-2、可以直接将图片弄到博客里面【格式：-图片地址-】" class="headerlink" title="4.2、可以直接将图片弄到博客里面【格式：!+[]+(图片地址)】"></a>4.2、可以直接将图片弄到博客里面【格式：!+[]+(图片地址)】</h3><h4 id="例如："><a href="#例如：" class="headerlink" title="例如："></a>例如：<img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=360824340,931715792&amp;fm=27&amp;gp=0.jpg" alt=""></h4><h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1514395971806&amp;di=286cdcaed88d1fe9215709b5d1801717&amp;imgtype=0&amp;src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201501%2F01%2F20150101205809_nGEty.gif" alt=""></h3><h1 id="5、斜体"><a href="#5、斜体" class="headerlink" title="5、斜体"></a>5、斜体</h1><h3 id="格式：星号-内容-星号（例如：这是斜体）"><a href="#格式：星号-内容-星号（例如：这是斜体）" class="headerlink" title="格式：星号+内容+星号（例如：这是斜体）"></a>格式：星号+内容+星号（例如：<em>这是斜体</em>）</h3><h2 id="6、粗体"><a href="#6、粗体" class="headerlink" title="6、粗体"></a>6、粗体</h2><h3 id="格式：-双星号-内容-双星号（例如：这是粗体）"><a href="#格式：-双星号-内容-双星号（例如：这是粗体）" class="headerlink" title="格式： 双星号+内容+双星号（例如：这是粗体）"></a>格式： 双星号+内容+双星号（例如：<strong>这是粗体</strong>）</h3><h2 id="7、标签"><a href="#7、标签" class="headerlink" title="7、标签"></a>7、标签</h2><h3 id="格式：英文状态下的-键三次-输入内容-英文状态下的-键三次（例如："><a href="#格式：英文状态下的-键三次-输入内容-英文状态下的-键三次（例如：" class="headerlink" title="格式：英文状态下的~键三次+输入内容+英文状态下的~键三次（例如： "></a>格式：英文状态下的~键三次+输入内容+英文状态下的~键三次（例如： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"> &lt;h1&gt;这是h1标签&lt;/h1&gt;</span><br><span class="line"> &lt;p&gt;这是h1标签&lt;/p&gt;</span><br></pre></td></tr></table></figure></h3><h2 id="8、列表"><a href="#8、列表" class="headerlink" title="8、列表"></a>8、列表</h2><h3 id="格式：-表名（-与表名有空格）"><a href="#格式：-表名（-与表名有空格）" class="headerlink" title="格式：## 表名（#与表名有空格）"></a>格式：## 表名（#与表名有空格）</h3><h3 id="xx-xx-xx-xx-xx"><a href="#xx-xx-xx-xx-xx" class="headerlink" title="xx|xx|xx|xx|xx"></a>xx|xx|xx|xx|xx</h3><h3 id="-1"><a href="#-1" class="headerlink" title="-|-|-|-|-"></a>-|-|-|-|-</h3><h4 id="【例如："><a href="#【例如：" class="headerlink" title="【例如："></a>【例如：</h4><h2 id="学生名单"><a href="#学生名单" class="headerlink" title="学生名单"></a>学生名单</h2><table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>性别</th>
+<th>年龄</th>
+<th>爱好</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>张三</td>
+<td>男</td>
+<td>19</td>
+<td>lol</td>
+</tr>
+</tbody>
+</table>
+<p>】</p>
+<h5 id="注：有几列就要输入几列"><a href="#注：有几列就要输入几列" class="headerlink" title="注：有几列就要输入几列 -|"></a>注：有几列就要输入几列 -|</h5><h2 id="9、分割线"><a href="#9、分割线" class="headerlink" title="9、分割线"></a>9、分割线</h2><h3 id="格式：三个星号以上"><a href="#格式：三个星号以上" class="headerlink" title="格式：三个星号以上"></a>格式：三个星号以上</h3><h4 id="例如"><a href="#例如" class="headerlink" title="例如"></a>例如</h4><hr>
+
+      
+      
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+            <div class="shang_tit">
+              <p>哎哟、不错哦</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+            </div>
+              <div class="pay_explain">哎哟、不错哦</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/alipay.png" alt="支付宝" /></span>
+                </div>
+              
+              
+                <div class="pay_item" data-id="wechat">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/weixin.png" alt="微信" /></span>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/img/"+dataid+"img.jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+            
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/12/26/1226笔记/">1226学习笔记</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 chong jiang 的个人博客">chong jiang</a></p>
+        <p><span>发布时间:</span>2017年12月26日 - 16时35分</p>
+        <p><span>最后更新:</span>2017年12月27日 - 22时46分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/12/26/1226笔记/" title="1226学习笔记">http://www.baidu.com/2017/12/26/1226笔记/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://www.baidu.com/2017/12/26/1226笔记/　　作者: chong jiang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2017/12/26/我的第一篇博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的第一篇博客</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一-如何直接在编码器中修改桌面文件？"><span class="toc-number">1.</span> <span class="toc-text">一.如何直接在编码器中修改桌面文件？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-右键点击git-bash-here；"><span class="toc-number">1.0.1.</span> <span class="toc-text">1.右键点击git bash here；</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-输入ls查看桌面文件；"><span class="toc-number">1.0.2.</span> <span class="toc-text">2.输入ls查看桌面文件；</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-输入touch-文件名-格式（例如：a-txt）；"><span class="toc-number">1.0.3.</span> <span class="toc-text">3.输入touch 文件名.格式（例如：a.txt）；</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-输入vi-文件名-格式；；"><span class="toc-number">1.0.4.</span> <span class="toc-text">4.输入vi 文件名.格式；；</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-输入i（插入），在输入想书写的内容；"><span class="toc-number">1.0.5.</span> <span class="toc-text">5.输入i（插入），在输入想书写的内容；</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-保存：esc键-：键-w-q键；"><span class="toc-number">1.0.6.</span> <span class="toc-text">6.保存：esc键+：键+w+q键；</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-window-r键输入cmd进入程序界面，输入cd-存放路径（例如桌面：desktop-cd-desktop-；"><span class="toc-number">1.0.7.</span> <span class="toc-text">7.window+r键输入cmd进入程序界面，输入cd 存放路径（例如桌面：desktop  cd desktop)；</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#注释：cd-（释义：返回上一级）"><span class="toc-number">1.0.7.1.</span> <span class="toc-text">注释：cd ..（释义：返回上一级）</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二-如何使用hexo-node-gif搭建个人博客？"><span class="toc-number">2.</span> <span class="toc-text">二.如何使用hexo+node+gif搭建个人博客？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-环境-工具"><span class="toc-number">2.1.</span> <span class="toc-text">1.环境/工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1、node：一款牛叉的web服务器，目前很多大型项目都使用node搭建；"><span class="toc-number">2.1.1.</span> <span class="toc-text">1.1、node：一款牛叉的web服务器，目前很多大型项目都使用node搭建；</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2、特点：解析效率高，没有兼容性，比较适合io密集型的项目；"><span class="toc-number">2.1.2.</span> <span class="toc-text">1.2、特点：解析效率高，没有兼容性，比较适合io密集型的项目；</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3版本：建议版本是6-19（比较稳定，兼容性好）；"><span class="toc-number">2.1.3.</span> <span class="toc-text">1.3版本：建议版本是6.19（比较稳定，兼容性好）；</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-如何安装"><span class="toc-number">2.2.</span> <span class="toc-text">2.如何安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1、点击https-nodejs-org-下载node-vscode-多语言开发工具-git-版本控制器-相应操作系统的安装包，安装过程可以一直按下一步；"><span class="toc-number">2.2.1.</span> <span class="toc-text">2.1、点击https://nodejs.org 下载node/vscode(多语言开发工具)/git(版本控制器)相应操作系统的安装包，安装过程可以一直按下一步；</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-如何测试nede是否安装成功"><span class="toc-number">2.3.</span> <span class="toc-text">3.如何测试nede是否安装成功</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1、首先win键-R输入cmd回车（enter键），在打开的编码窗口中命令输入-node-v-，如果能显示node版本则安装成功，否则重新安装；"><span class="toc-number">2.3.1.</span> <span class="toc-text">3.1、首先win键+R输入cmd回车（enter键），在打开的编码窗口中命令输入 node -v ，如果能显示node版本则安装成功，否则重新安装；</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-如何安装hexo脚手架"><span class="toc-number">2.4.</span> <span class="toc-text">4.如何安装hexo脚手架</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1、Window键-R输入-cmd并回车（enter键）；"><span class="toc-number">2.4.1.</span> <span class="toc-text">4.1、Window键+R输入 cmd并回车（enter键）；</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2、在cmd回车后弹出的编码窗口中输入-npm-install-g-hexo-cli"><span class="toc-number">2.4.2.</span> <span class="toc-text">4.2、在cmd回车后弹出的编码窗口中输入 npm install -g hexo-cli</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#注释"><span class="toc-number">2.4.2.1.</span> <span class="toc-text">注释</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#a、npm：依赖包管理工具"><span class="toc-number">2.4.2.1.1.</span> <span class="toc-text">a、npm：依赖包管理工具</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#b、install：导入-安装"><span class="toc-number">2.4.2.1.2.</span> <span class="toc-text">b、install：导入/安装</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#c、-g：全局安装"><span class="toc-number">2.4.2.1.3.</span> <span class="toc-text">c、-g：全局安装</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-如何初始化一个博客项目"><span class="toc-number">2.5.</span> <span class="toc-text">5.如何初始化一个博客项目</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1、hexo-init-项目名称-英文）；"><span class="toc-number">2.5.1.</span> <span class="toc-text">5.1、hexo init 项目名称(英文）；</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#注：init-初始化"><span class="toc-number">2.5.1.1.</span> <span class="toc-text">注：init 初始化</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-如何进入项目并添加依赖包"><span class="toc-number">2.6.</span> <span class="toc-text">6.如何进入项目并添加依赖包</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#（如果在拷贝文件时，一定要先将文件夹中node-modules文件夹删除，并重新添加依赖包）"><span class="toc-number">2.6.0.1.</span> <span class="toc-text">（如果在拷贝文件时，一定要先将文件夹中node_modules文件夹删除，并重新添加依赖包）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1、先进入到项目主目录文件夹；"><span class="toc-number">2.6.1.</span> <span class="toc-text">6.1、先进入到项目主目录文件夹；</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2、选中文件夹并点击鼠标右键git-bash-here-；"><span class="toc-number">2.6.2.</span> <span class="toc-text">6.2、选中文件夹并点击鼠标右键git bash here ；</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3、再弹出编码窗口后，使用npm-install命令添加依赖包；"><span class="toc-number">2.6.3.</span> <span class="toc-text">6.3、再弹出编码窗口后，使用npm install命令添加依赖包；</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#目的：将项目所需依赖包添加到本地"><span class="toc-number">2.6.3.1.</span> <span class="toc-text">目的：将项目所需依赖包添加到本地</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-如何启动node服务器并打开博客网页"><span class="toc-number">2.7.</span> <span class="toc-text">7.如何启动node服务器并打开博客网页</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#方式一：7-1、选中博客文件夹右键-git-bash-here；"><span class="toc-number">2.7.1.</span> <span class="toc-text">方式一：7.1、选中博客文件夹右键 git bash here；</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-2、在弹出的编码框中输入-hexo-server；"><span class="toc-number">2.7.1.1.</span> <span class="toc-text">7.2、在弹出的编码框中输入 hexo server；</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-3、在浏览器地址栏输入：localhost：4000回车浏览；"><span class="toc-number">2.7.1.2.</span> <span class="toc-text">7.3、在浏览器地址栏输入：localhost：4000回车浏览；</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#注：在打开页面时，服务器不能处在关闭状态（快捷键ctrl-c停止服务器）；"><span class="toc-number">2.7.1.2.1.</span> <span class="toc-text">注：在打开页面时，服务器不能处在关闭状态（快捷键ctrl+c停止服务器）；</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方式二：在visual-studio软件中按快捷键-ctrl-键调出编码框，输入代码hexo-s-按回车键；"><span class="toc-number">2.7.2.</span> <span class="toc-text">方式二：在visual studio软件中按快捷键 ctrl + ~ 键调出编码框，输入代码hexo s 按回车键；</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-如何对博客页面中的一些内容进行修改"><span class="toc-number">2.8.</span> <span class="toc-text">8.如何对博客页面中的一些内容进行修改</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8-1、首先打开visual-syudio软件，按快捷键-ctrl-键调出编码框，按-按钮新建一个编码窗口，在新建的编码窗口中输入hexo-new-文章名并按回车（例如：hexo-new-我的第一篇博客）；"><span class="toc-number">2.8.1.</span> <span class="toc-text">8.1、首先打开visual syudio软件，按快捷键 ctrl + ~ 键调出编码框，按+按钮新建一个编码窗口，在新建的编码窗口中输入hexo new 文章名并按回车（例如：hexo new 我的第一篇博客）；</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-2、对文章的标题可以进行修改（title中的内容，注意—之上的内容之间均有空格键，例如：titile-1226学习笔记；-8-3、对修改的文章，按住ctrl-s键保存后刷新博客页面，也可以在编码框中输入-hexo-g并回车（编译）；"><span class="toc-number">2.8.2.</span> <span class="toc-text">8.2、对文章的标题可以进行修改（title中的内容，注意—之上的内容之间均有空格键，例如：titile 1226学习笔记；### 8.3、对修改的文章，按住ctrl+s键保存后刷新博客页面，也可以在编码框中输入 hexo g并回车（编译）；</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#注：浏览器刷新页面快捷键-ctrl-R"><span class="toc-number">2.8.2.1.</span> <span class="toc-text">注：浏览器刷新页面快捷键 ctrl+R</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三-markdown的语法"><span class="toc-number">3.</span> <span class="toc-text">三.markdown的语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、-符号"><span class="toc-number">3.1.</span> <span class="toc-text">1、#符号</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#空格：有几个-号就是几级标题-例如三级标题-空格-；"><span class="toc-number">3.1.1.</span> <span class="toc-text">#+空格：有几个#号就是几级标题(例如三级标题 ###+空格)；</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、-符号"><span class="toc-number">3.2.</span> <span class="toc-text">2、-符号</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#空格：无序列表；"><span class="toc-number">3.2.1.</span> <span class="toc-text">- + 空格：无序列表；</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、1"><span class="toc-number">3.3.</span> <span class="toc-text">3、1.</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-空格：有序列表；"><span class="toc-number">3.3.1.</span> <span class="toc-text">1. + 空格：有序列表；</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#（例如：1-列表项1-1-列表项2-1-列表项3所显示出的效果为1-列表项1-2-列表项2-3-列表项3）；"><span class="toc-number">3.3.1.1.</span> <span class="toc-text">（例如：1. 列表项1/1. 列表项2/1. 列表项3所显示出的效果为1.列表项1/2.列表项2/3.列表项3）；</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#注：1-后面一定要加空格"><span class="toc-number">3.3.1.1.1.</span> <span class="toc-text">注：1.后面一定要加空格</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、超链接"><span class="toc-number">3.4.</span> <span class="toc-text">4、超链接</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1、内容-例如跳转到百度"><span class="toc-number">3.4.1.</span> <span class="toc-text">4.1、内容  例如跳转到百度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2、可以直接将图片弄到博客里面【格式：-图片地址-】"><span class="toc-number">3.4.2.</span> <span class="toc-text">4.2、可以直接将图片弄到博客里面【格式：!+[]+(图片地址)】</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#例如："><span class="toc-number">3.4.2.1.</span> <span class="toc-text">例如：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#"><span class="toc-number">3.4.3.</span> <span class="toc-text"></span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5、斜体"><span class="toc-number">4.</span> <span class="toc-text">5、斜体</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#格式：星号-内容-星号（例如：这是斜体）"><span class="toc-number">4.0.1.</span> <span class="toc-text">格式：星号+内容+星号（例如：这是斜体）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6、粗体"><span class="toc-number">4.1.</span> <span class="toc-text">6、粗体</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#格式：-双星号-内容-双星号（例如：这是粗体）"><span class="toc-number">4.1.1.</span> <span class="toc-text">格式： 双星号+内容+双星号（例如：这是粗体）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7、标签"><span class="toc-number">4.2.</span> <span class="toc-text">7、标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#格式：英文状态下的-键三次-输入内容-英文状态下的-键三次（例如："><span class="toc-number">4.2.1.</span> <span class="toc-text">格式：英文状态下的~键三次+输入内容+英文状态下的~键三次（例如： 123``` &lt;h1&gt;这是h1标签&lt;/h1&gt; &lt;p&gt;这是h1标签&lt;/p&gt;</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8、列表"><span class="toc-number">4.3.</span> <span class="toc-text">8、列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#格式：-表名（-与表名有空格）"><span class="toc-number">4.3.1.</span> <span class="toc-text">格式：## 表名（#与表名有空格）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#xx-xx-xx-xx-xx"><span class="toc-number">4.3.2.</span> <span class="toc-text">xx|xx|xx|xx|xx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-1"><span class="toc-number">4.3.3.</span> <span class="toc-text">-|-|-|-|-</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#【例如："><span class="toc-number">4.3.3.1.</span> <span class="toc-text">【例如：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#学生名单"><span class="toc-number">4.4.</span> <span class="toc-text">学生名单</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#注：有几列就要输入几列"><span class="toc-number">4.4.0.0.1.</span> <span class="toc-text">注：有几列就要输入几列 -|</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9、分割线"><span class="toc-number">4.5.</span> <span class="toc-text">9、分割线</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#格式：三个星号以上"><span class="toc-number">4.5.1.</span> <span class="toc-text">格式：三个星号以上</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#例如"><span class="toc-number">4.5.1.1.</span> <span class="toc-text">例如</span></a></li></ol></li></ol></li></ol></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+        <div id="gitments"></div>
+<script src="/js/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+      id: window.location.pathname,
+      owner: 'luuman',
+      repo: 'luuman.github.io',
+      oauth: {
+        client_id: '',
+        client_secret: '',
+      },
+    })
+    gitment.render('gitments')
+</script>
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2017/12/26/我的第一篇博客/" title="下一篇: 我的第一篇博客">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/12/26/1226笔记/">1226学习笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/26/我的第一篇博客/">我的第一篇博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/26/hello-world/">你好！世界</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2017 chong jiang
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >海贼到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 7;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>
