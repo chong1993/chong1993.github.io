@@ -126,6 +126,8 @@
                         
                             <li><a href="/FrontEndGuide">前端导航</a></li>
                         
+                            <li><a href="/photo">照片墙</a></li>
+                        
                         </ul>
                     </nav>
                     <nav class="header-nav">
@@ -209,6 +211,8 @@
                 
                     <li><a href="/FrontEndGuide">前端导航</a></li>
                 
+                    <li><a href="/photo">照片墙</a></li>
+                
                 <div class="clearfix"></div>
                 </ul>
             </nav>
@@ -235,6 +239,188 @@
     </div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-hexo-github搭建个人博客" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/12/28/hexo-github搭建个人博客/" class="article-date">
+      <time datetime="2017-12-28T06:37:40.000Z" itemprop="datePublished">2017-12-28</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/28/hexo-github搭建个人博客/">hexo+github搭建个人博客</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>hexo是目前最主流的静态博客框架，该框架基于node，因此编译效率非常高，同时借助github可以实现零成本搭建和维护，Let’s go！</p>
+<hr>
+<h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><h2 id="安装node环境"><a href="#安装node环境" class="headerlink" title="安装node环境"></a>安装node环境</h2><p>在node官网<a href="http://www.nodejs.org" target="_blank" rel="noopener">下载</a>d对应操作系统的node安装包，安装过程比较简单，就是next模式，安装完毕之后通过以下步骤检测是否安装成功：</p>
+<ul>
+<li>win+r打开命令行窗口</li>
+<li>输入cmd回车</li>
+<li>在cmd窗口输入node -v</li>
+</ul>
+<p>如果提示“node不是外部或内部命令”，则表示安装失败</p>
+<h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><p>git：版本控制器<br>进入git官网<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">下载</a>对应操作系统的git安装包，next模式安装</p>
+<h2 id="安装vscode编译器"><a href="#安装vscode编译器" class="headerlink" title="安装vscode编译器"></a>安装vscode编译器</h2><p>vscode是一款强大的IDE</p>
+<hr>
+<h1 id="安装hexo脚手架"><a href="#安装hexo脚手架" class="headerlink" title="安装hexo脚手架"></a>安装hexo脚手架</h1><ol>
+<li>win+r输入cmd回车</li>
+<li><p>输入如下命令，回车</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<ul>
+<li>npm:依赖包管理器</li>
+<li>install:安装、导入，可以简写为i</li>
+<li>-g：代表全局安装</li>
+</ul>
+</li>
+</ol>
+<h1 id="创建博客项目"><a href="#创建博客项目" class="headerlink" title="创建博客项目"></a>创建博客项目</h1><ol>
+<li><p>在指定位置使用如下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>进入博客目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加依赖包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="本地预览博客"><a href="#本地预览博客" class="headerlink" title="本地预览博客"></a>本地预览博客</h1><h2 id="启动hexo服务"><a href="#启动hexo服务" class="headerlink" title="启动hexo服务"></a>启动hexo服务</h2><p>在blog路径下使用如下命令启动<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
+<p>然后在浏览器地址栏输入<a href="http://localhost:4000回车访问个人博客" target="_blank" rel="noopener">http://localhost:4000回车访问个人博客</a></p>
+<h2 id="编译博客"><a href="#编译博客" class="headerlink" title="编译博客"></a>编译博客</h2><p>每一次修改博客后，先ctrl+s保存，然后使用如下命令编译：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure></p>
+<h2 id="清理缓存"><a href="#清理缓存" class="headerlink" title="清理缓存"></a>清理缓存</h2><p>当修改了博客内容，编译后浏览器页面没有发生变化时，需要清理博客缓存，方式如下：</p>
+<ol>
+<li>在blog目录执行hexo clean后重新编译</li>
+<li>在浏览器博客页面使用ctrl+shift+i(F12)调出控制台，切换到network，选中disable cache，然后ctrl+r(刷新)</li>
+</ol>
+<h1 id="编写博客"><a href="#编写博客" class="headerlink" title="编写博客"></a>编写博客</h1><ol>
+<li>创建博客文章<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 文章标题</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>然后在source/_post目录打开相应的md编辑即可</p>
+<ol>
+<li>创建页面<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page 页面标题</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>然后在source目录下找到对应文件夹，打开里面的index.md编写即可</p>
+<h1 id="替换主题"><a href="#替换主题" class="headerlink" title="替换主题"></a>替换主题</h1><ol>
+<li>在<a href="https://hexo.io/themes/" target="_blank" rel="noopener">主题</a>官网找到自己喜欢的主题，根据提示git到本地themes目录</li>
+<li>修改博客项目根路径下的_config.yml配置文件，将theme改为新主题文件夹名称</li>
+<li>停止hexo服务再重启(ctrl+c)</li>
+<li>执行hexo g编译，然后去浏览器预览<h1 id="托管到github"><a href="#托管到github" class="headerlink" title="托管到github"></a>托管到github</h1></li>
+<li>注册github账号(自行百度)</li>
+<li><p>验证ssh key</p>
+<ul>
+<li>在桌面右键git bash here</li>
+<li>使用ssh-keygen -t rsa -C “注册git的邮箱” 命令，然后一路回车，直到出现泡沫图案</li>
+<li>进入C:\Users\计算机用户名.ssh文件夹</li>
+<li>右键打开id_rsa.pub文件，然后ctrl+a全选，然后ctrl+c复制</li>
+<li>进入github官网，右上角点击个人头像，下拉菜单选择settings</li>
+<li>选择左侧ssh and gpg keys</li>
+<li>单击右侧add ssh key按钮</li>
+<li>title：随便填，key：ctrl+v，然后点击add ssh key按钮</li>
+</ul>
+</li>
+<li><p>验证github用户名和邮箱</p>
+<ul>
+<li>在桌面右键git bash here，依次执行以下命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;github用户名&quot;</span><br><span class="line">git config --global user.email &quot;github邮箱&quot;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>在github创建用户名同名仓库</p>
+<ul>
+<li>点击github头像左侧+按钮，选择第一项</li>
+<li>仓库名：github用户名.github.io<br>ps:注意区分大小写，必须保持一致</li>
+</ul>
+</li>
+<li>配置_config.yml<br>打开blog项目根目录的_config.yml，找到最下面的deploy选项，按照如下格式填写：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: http://github.com/用户名/用户名.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>ps:注意缩进和符号以及属性前面的空格</p>
+<ol>
+<li>在blog根目录执行hexo d命令将本地博客代码推送到github服务器<br>ps：不需要每更改一次都推送，先在本地测试准确无误后再推送<h1 id="个人域名绑定"><a href="#个人域名绑定" class="headerlink" title="个人域名绑定"></a>个人域名绑定</h1><ol>
+<li>域名申请(自行百度)</li>
+<li>域名解析，添加如下记录值</li>
+</ol>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>记录类型</th>
+<th>主机记录</th>
+<th>解析线路(isp)</th>
+<th>记录值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CNAME</td>
+<td>www</td>
+<td>默认</td>
+<td>用户名.github.io</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>默认</td>
+<td>192.30.252.153</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>默认</td>
+<td>192.30.252.154</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>在博客主目录下找到public文件夹<br>在里面新建名为CNAME的文件(不带后缀)</li>
+<li>在CNAME文件里面填写个人域名，如<br>baidu.com<br>ps:不带http、www等修饰</li>
+<li>执行hexo d命令推送</li>
+</ol>
+
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-1226笔记" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -263,7 +449,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="一-如何直接在编码器中修改桌面文件？"><a href="#一-如何直接在编码器中修改桌面文件？" class="headerlink" title="一.如何直接在编码器中修改桌面文件？"></a>一.如何直接在编码器中修改桌面文件？</h1><h3 id="1-右键点击git-bash-here；"><a href="#1-右键点击git-bash-here；" class="headerlink" title="1.右键点击git bash here；"></a>1.右键点击git bash here；</h3><h3 id="2-输入ls查看桌面文件；"><a href="#2-输入ls查看桌面文件；" class="headerlink" title="2.输入ls查看桌面文件；"></a>2.输入ls查看桌面文件；</h3><h3 id="3-输入touch-文件名-格式（例如：a-txt）；"><a href="#3-输入touch-文件名-格式（例如：a-txt）；" class="headerlink" title="3.输入touch 文件名.格式（例如：a.txt）；"></a>3.输入touch 文件名.格式（例如：a.txt）；</h3><h3 id="4-输入vi-文件名-格式；；"><a href="#4-输入vi-文件名-格式；；" class="headerlink" title="4.输入vi 文件名.格式；；"></a>4.输入vi 文件名.格式；；</h3><h3 id="5-输入i（插入），在输入想书写的内容；"><a href="#5-输入i（插入），在输入想书写的内容；" class="headerlink" title="5.输入i（插入），在输入想书写的内容；"></a>5.输入i（插入），在输入想书写的内容；</h3><h3 id="6-保存：esc键-：键-w-q键；"><a href="#6-保存：esc键-：键-w-q键；" class="headerlink" title="6.保存：esc键+：键+w+q键；"></a>6.保存：esc键+：键+w+q键；</h3><h3 id="7-window-r键输入cmd进入程序界面，输入cd-存放路径（例如桌面：desktop-cd-desktop-；"><a href="#7-window-r键输入cmd进入程序界面，输入cd-存放路径（例如桌面：desktop-cd-desktop-；" class="headerlink" title="7.window+r键输入cmd进入程序界面，输入cd 存放路径（例如桌面：desktop  cd desktop)；"></a>7.window+r键输入cmd进入程序界面，输入cd 存放路径（例如桌面：desktop  cd desktop)；</h3><h4 id="注释：cd-（释义：返回上一级）"><a href="#注释：cd-（释义：返回上一级）" class="headerlink" title="注释：cd ..（释义：返回上一级）"></a>注释：cd ..（释义：返回上一级）</h4><hr>
+        <h1 id="一-如何直接在编码器中修改桌面文件？"><a href="#一-如何直接在编码器中修改桌面文件？" class="headerlink" title="一.如何直接在编码器中修改桌面文件？"></a>一.如何直接在编码器中修改桌面文件？</h1><h3 id="1-右键点击git-bash-here；"><a href="#1-右键点击git-bash-here；" class="headerlink" title="1.右键点击git bash here；"></a>1.右键点击git bash here；</h3><h3 id="2-输入ls查看桌面文件；"><a href="#2-输入ls查看桌面文件；" class="headerlink" title="2.输入ls查看桌面文件；"></a>2.输入ls查看桌面文件；</h3><h3 id="3-输入touch-文件名-格式（例如：a-txt）；"><a href="#3-输入touch-文件名-格式（例如：a-txt）；" class="headerlink" title="3.输入touch 文件名.格式（例如：a.txt）；"></a>3.输入touch 文件名.格式（例如：a.txt）；</h3><h3 id="4-输入vi-文件名-格式；"><a href="#4-输入vi-文件名-格式；" class="headerlink" title="4.输入vi 文件名.格式；"></a>4.输入vi 文件名.格式；</h3><h3 id="5-输入i（插入），在输入想书写的内容；"><a href="#5-输入i（插入），在输入想书写的内容；" class="headerlink" title="5.输入i（插入），在输入想书写的内容；"></a>5.输入i（插入），在输入想书写的内容；</h3><h3 id="6-保存：esc键-：键-w-q键；"><a href="#6-保存：esc键-：键-w-q键；" class="headerlink" title="6.保存：esc键+：键+w+q键；"></a>6.保存：esc键+：键+w+q键；</h3><h3 id="7-window-r键输入cmd进入程序界面，输入cd-存放路径（例如桌面：desktop-cd-desktop-；"><a href="#7-window-r键输入cmd进入程序界面，输入cd-存放路径（例如桌面：desktop-cd-desktop-；" class="headerlink" title="7.window+r键输入cmd进入程序界面，输入cd 存放路径（例如桌面：desktop  cd desktop)；"></a>7.window+r键输入cmd进入程序界面，输入cd 存放路径（例如桌面：desktop  cd desktop)；</h3><h4 id="注释：cd-（释义：返回上一级）"><a href="#注释：cd-（释义：返回上一级）" class="headerlink" title="注释：cd ..（释义：返回上一级）"></a>注释：cd ..（释义：返回上一级）</h4><hr>
 <h1 id="二-如何使用hexo-node-gif搭建个人博客？"><a href="#二-如何使用hexo-node-gif搭建个人博客？" class="headerlink" title="二.如何使用hexo+node+gif搭建个人博客？"></a>二.如何使用hexo+node+gif搭建个人博客？</h1><h2 id="1-环境-工具"><a href="#1-环境-工具" class="headerlink" title="1.环境/工具"></a>1.环境/工具</h2><h3 id="1-1、node：一款牛叉的web服务器，目前很多大型项目都使用node搭建；"><a href="#1-1、node：一款牛叉的web服务器，目前很多大型项目都使用node搭建；" class="headerlink" title="1.1、node：一款牛叉的web服务器，目前很多大型项目都使用node搭建；"></a>1.1、node：一款牛叉的web服务器，目前很多大型项目都使用node搭建；</h3><h3 id="1-2、特点：解析效率高，没有兼容性，比较适合io密集型的项目；"><a href="#1-2、特点：解析效率高，没有兼容性，比较适合io密集型的项目；" class="headerlink" title="1.2、特点：解析效率高，没有兼容性，比较适合io密集型的项目；"></a>1.2、特点：解析效率高，没有兼容性，比较适合io密集型的项目；</h3><h3 id="1-3版本：建议版本是6-19（比较稳定，兼容性好）；"><a href="#1-3版本：建议版本是6-19（比较稳定，兼容性好）；" class="headerlink" title="1.3版本：建议版本是6.19（比较稳定，兼容性好）；"></a>1.3版本：建议版本是6.19（比较稳定，兼容性好）；</h3><h2 id="2-如何安装"><a href="#2-如何安装" class="headerlink" title="2.如何安装"></a>2.如何安装</h2><h3 id="2-1、点击https-nodejs-org-下载node-vscode-多语言开发工具-git-版本控制器-相应操作系统的安装包，安装过程可以一直按下一步；"><a href="#2-1、点击https-nodejs-org-下载node-vscode-多语言开发工具-git-版本控制器-相应操作系统的安装包，安装过程可以一直按下一步；" class="headerlink" title="2.1、点击https://nodejs.org 下载node/vscode(多语言开发工具)/git(版本控制器)相应操作系统的安装包，安装过程可以一直按下一步；"></a>2.1、点击<a href="https://nodejs.org" target="_blank" rel="noopener">https://nodejs.org</a> 下载node/vscode(多语言开发工具)/git(版本控制器)相应操作系统的安装包，安装过程可以一直按下一步；</h3><h2 id="3-如何测试nede是否安装成功"><a href="#3-如何测试nede是否安装成功" class="headerlink" title="3.如何测试nede是否安装成功"></a>3.如何测试nede是否安装成功</h2><h3 id="3-1、首先win键-R输入cmd回车（enter键），在打开的编码窗口中命令输入-node-v-，如果能显示node版本则安装成功，否则重新安装；"><a href="#3-1、首先win键-R输入cmd回车（enter键），在打开的编码窗口中命令输入-node-v-，如果能显示node版本则安装成功，否则重新安装；" class="headerlink" title="3.1、首先win键+R输入cmd回车（enter键），在打开的编码窗口中命令输入 node -v ，如果能显示node版本则安装成功，否则重新安装；"></a>3.1、首先win键+R输入cmd回车（enter键），在打开的编码窗口中命令输入 node -v ，如果能显示node版本则安装成功，否则重新安装；</h3><h2 id="4-如何安装hexo脚手架"><a href="#4-如何安装hexo脚手架" class="headerlink" title="4.如何安装hexo脚手架"></a>4.如何安装hexo脚手架</h2><h3 id="4-1、Window键-R输入-cmd并回车（enter键）；"><a href="#4-1、Window键-R输入-cmd并回车（enter键）；" class="headerlink" title="4.1、Window键+R输入 cmd并回车（enter键）；"></a>4.1、Window键+R输入 cmd并回车（enter键）；</h3><h3 id="4-2、在cmd回车后弹出的编码窗口中输入-npm-install-g-hexo-cli"><a href="#4-2、在cmd回车后弹出的编码窗口中输入-npm-install-g-hexo-cli" class="headerlink" title="4.2、在cmd回车后弹出的编码窗口中输入 npm install -g hexo-cli"></a>4.2、在cmd回车后弹出的编码窗口中输入 npm install -g hexo-cli</h3><h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4><h5 id="a、npm：依赖包管理工具"><a href="#a、npm：依赖包管理工具" class="headerlink" title="a、npm：依赖包管理工具"></a>a、npm：依赖包管理工具</h5><h5 id="b、install：导入-安装"><a href="#b、install：导入-安装" class="headerlink" title="b、install：导入/安装"></a>b、install：导入/安装</h5><h5 id="c、-g：全局安装"><a href="#c、-g：全局安装" class="headerlink" title="c、-g：全局安装"></a>c、-g：全局安装</h5><h2 id="5-如何初始化一个博客项目"><a href="#5-如何初始化一个博客项目" class="headerlink" title="5.如何初始化一个博客项目"></a>5.如何初始化一个博客项目</h2><h3 id="5-1、hexo-init-项目名称-英文）；"><a href="#5-1、hexo-init-项目名称-英文）；" class="headerlink" title="5.1、hexo init 项目名称(英文）；"></a>5.1、hexo init 项目名称(英文）；</h3><h4 id="注：init-初始化"><a href="#注：init-初始化" class="headerlink" title="注：init 初始化"></a>注：init 初始化</h4><h2 id="6-如何进入项目并添加依赖包"><a href="#6-如何进入项目并添加依赖包" class="headerlink" title="6.如何进入项目并添加依赖包"></a>6.如何进入项目并添加依赖包</h2><h4 id="（如果在拷贝文件时，一定要先将文件夹中node-modules文件夹删除，并重新添加依赖包）"><a href="#（如果在拷贝文件时，一定要先将文件夹中node-modules文件夹删除，并重新添加依赖包）" class="headerlink" title="（如果在拷贝文件时，一定要先将文件夹中node_modules文件夹删除，并重新添加依赖包）"></a>（如果在拷贝文件时，一定要先将文件夹中node_modules文件夹删除，并重新添加依赖包）</h4><h3 id="6-1、先进入到项目主目录文件夹；"><a href="#6-1、先进入到项目主目录文件夹；" class="headerlink" title="6.1、先进入到项目主目录文件夹；"></a>6.1、先进入到项目主目录文件夹；</h3><h3 id="6-2、选中文件夹并点击鼠标右键git-bash-here-；"><a href="#6-2、选中文件夹并点击鼠标右键git-bash-here-；" class="headerlink" title="6.2、选中文件夹并点击鼠标右键git bash here ；"></a>6.2、选中文件夹并点击鼠标右键git bash here ；</h3><h3 id="6-3、再弹出编码窗口后，使用npm-install命令添加依赖包；"><a href="#6-3、再弹出编码窗口后，使用npm-install命令添加依赖包；" class="headerlink" title="6.3、再弹出编码窗口后，使用npm install命令添加依赖包；"></a>6.3、再弹出编码窗口后，使用npm install命令添加依赖包；</h3><h4 id="目的：将项目所需依赖包添加到本地"><a href="#目的：将项目所需依赖包添加到本地" class="headerlink" title="目的：将项目所需依赖包添加到本地"></a>目的：将项目所需依赖包添加到本地</h4><h2 id="7-如何启动node服务器并打开博客网页"><a href="#7-如何启动node服务器并打开博客网页" class="headerlink" title="7.如何启动node服务器并打开博客网页"></a>7.如何启动node服务器并打开博客网页</h2><h3 id="方式一：7-1、选中博客文件夹右键-git-bash-here；"><a href="#方式一：7-1、选中博客文件夹右键-git-bash-here；" class="headerlink" title="方式一：7.1、选中博客文件夹右键 git bash here；"></a>方式一：7.1、选中博客文件夹右键 git bash here；</h3><h4 id="7-2、在弹出的编码框中输入-hexo-server；"><a href="#7-2、在弹出的编码框中输入-hexo-server；" class="headerlink" title="7.2、在弹出的编码框中输入 hexo server；"></a>7.2、在弹出的编码框中输入 hexo server；</h4><h4 id="7-3、在浏览器地址栏输入：localhost：4000回车浏览；"><a href="#7-3、在浏览器地址栏输入：localhost：4000回车浏览；" class="headerlink" title="7.3、在浏览器地址栏输入：localhost：4000回车浏览；"></a>7.3、在浏览器地址栏输入：localhost：4000回车浏览；</h4><h5 id="注：在打开页面时，服务器不能处在关闭状态（快捷键ctrl-c停止服务器）；"><a href="#注：在打开页面时，服务器不能处在关闭状态（快捷键ctrl-c停止服务器）；" class="headerlink" title="注：在打开页面时，服务器不能处在关闭状态（快捷键ctrl+c停止服务器）；"></a>注：在打开页面时，服务器不能处在关闭状态（快捷键ctrl+c停止服务器）；</h5><h3 id="方式二：在visual-studio软件中按快捷键-ctrl-键调出编码框，输入代码hexo-s-按回车键；"><a href="#方式二：在visual-studio软件中按快捷键-ctrl-键调出编码框，输入代码hexo-s-按回车键；" class="headerlink" title="方式二：在visual studio软件中按快捷键 ctrl + ~ 键调出编码框，输入代码hexo s 按回车键；"></a>方式二：在visual studio软件中按快捷键 ctrl + ~ 键调出编码框，输入代码hexo s 按回车键；</h3><h2 id="8-如何对博客页面中的一些内容进行修改"><a href="#8-如何对博客页面中的一些内容进行修改" class="headerlink" title="8.如何对博客页面中的一些内容进行修改"></a>8.如何对博客页面中的一些内容进行修改</h2><h3 id="8-1、首先打开visual-syudio软件，按快捷键-ctrl-键调出编码框，按-按钮新建一个编码窗口，在新建的编码窗口中输入hexo-new-文章名并按回车（例如：hexo-new-我的第一篇博客）；"><a href="#8-1、首先打开visual-syudio软件，按快捷键-ctrl-键调出编码框，按-按钮新建一个编码窗口，在新建的编码窗口中输入hexo-new-文章名并按回车（例如：hexo-new-我的第一篇博客）；" class="headerlink" title="8.1、首先打开visual syudio软件，按快捷键 ctrl + ~ 键调出编码框，按+按钮新建一个编码窗口，在新建的编码窗口中输入hexo new 文章名并按回车（例如：hexo new 我的第一篇博客）；"></a>8.1、首先打开visual syudio软件，按快捷键 ctrl + ~ 键调出编码框，按+按钮新建一个编码窗口，在新建的编码窗口中输入hexo new 文章名并按回车（例如：hexo new 我的第一篇博客）；</h3><h3 id="8-2、对文章的标题可以进行修改（title中的内容，注意—之上的内容之间均有空格键，例如：titile-1226学习笔记；-8-3、对修改的文章，按住ctrl-s键保存后刷新博客页面，也可以在编码框中输入-hexo-g并回车（编译）；"><a href="#8-2、对文章的标题可以进行修改（title中的内容，注意—之上的内容之间均有空格键，例如：titile-1226学习笔记；-8-3、对修改的文章，按住ctrl-s键保存后刷新博客页面，也可以在编码框中输入-hexo-g并回车（编译）；" class="headerlink" title="8.2、对文章的标题可以进行修改（title中的内容，注意—之上的内容之间均有空格键，例如：titile 1226学习笔记；### 8.3、对修改的文章，按住ctrl+s键保存后刷新博客页面，也可以在编码框中输入 hexo g并回车（编译）；"></a>8.2、对文章的标题可以进行修改（title中的内容，注意—之上的内容之间均有空格键，例如：titile 1226学习笔记；### 8.3、对修改的文章，按住ctrl+s键保存后刷新博客页面，也可以在编码框中输入 hexo g并回车（编译）；</h3><h4 id="注：浏览器刷新页面快捷键-ctrl-R"><a href="#注：浏览器刷新页面快捷键-ctrl-R" class="headerlink" title="注：浏览器刷新页面快捷键 ctrl+R"></a>注：浏览器刷新页面快捷键 ctrl+R</h4><hr>
 <h1 id="三-markdown的语法"><a href="#三-markdown的语法" class="headerlink" title="三.markdown的语法"></a>三.markdown的语法</h1><h2 id="1、-符号"><a href="#1、-符号" class="headerlink" title="1、#符号"></a>1、#符号</h2><h3 id="空格：有几个-号就是几级标题-例如三级标题-空格-；"><a href="#空格：有几个-号就是几级标题-例如三级标题-空格-；" class="headerlink" title="#+空格：有几个#号就是几级标题(例如三级标题 ###+空格)；"></a>#+空格：有几个#号就是几级标题(例如三级标题 ###+空格)；</h3><h2 id="2、-符号"><a href="#2、-符号" class="headerlink" title="2、-符号"></a>2、-符号</h2><h3 id="空格：无序列表；"><a href="#空格：无序列表；" class="headerlink" title="- + 空格：无序列表；"></a>- + 空格：无序列表；</h3><h2 id="3、1"><a href="#3、1" class="headerlink" title="3、1."></a>3、1.</h2><h3 id="1-空格：有序列表；"><a href="#1-空格：有序列表；" class="headerlink" title="1. + 空格：有序列表；"></a>1. + 空格：有序列表；</h3><h4 id="（例如：1-列表项1-1-列表项2-1-列表项3所显示出的效果为1-列表项1-2-列表项2-3-列表项3）；"><a href="#（例如：1-列表项1-1-列表项2-1-列表项3所显示出的效果为1-列表项1-2-列表项2-3-列表项3）；" class="headerlink" title="（例如：1. 列表项1/1. 列表项2/1. 列表项3所显示出的效果为1.列表项1/2.列表项2/3.列表项3）；"></a>（例如：1. 列表项1/1. 列表项2/1. 列表项3所显示出的效果为1.列表项1/2.列表项2/3.列表项3）；</h4><h5 id="注：1-后面一定要加空格"><a href="#注：1-后面一定要加空格" class="headerlink" title="注：1.后面一定要加空格"></a>注：1.后面一定要加空格</h5><h2 id="4、超链接"><a href="#4、超链接" class="headerlink" title="4、超链接"></a>4、超链接</h2><h3 id="4-1、内容-例如跳转到百度"><a href="#4-1、内容-例如跳转到百度" class="headerlink" title="4.1、内容  例如跳转到百度"></a>4.1、<a href="网址">内容</a>  例如<a href="https://www.baidu.com">跳转到百度</a></h3><h3 id="4-2、可以直接将图片弄到博客里面【格式：-图片地址-】"><a href="#4-2、可以直接将图片弄到博客里面【格式：-图片地址-】" class="headerlink" title="4.2、可以直接将图片弄到博客里面【格式：!+[]+(图片地址)】"></a>4.2、可以直接将图片弄到博客里面【格式：!+[]+(图片地址)】</h3><h4 id="例如："><a href="#例如：" class="headerlink" title="例如："></a>例如：<img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=360824340,931715792&amp;fm=27&amp;gp=0.jpg" alt=""></h4><h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1514395971806&amp;di=286cdcaed88d1fe9215709b5d1801717&amp;imgtype=0&amp;src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201501%2F01%2F20150101205809_nGEty.gif" alt=""></h3><h1 id="5、斜体"><a href="#5、斜体" class="headerlink" title="5、斜体"></a>5、斜体</h1><h3 id="格式：星号-内容-星号（例如：这是斜体）"><a href="#格式：星号-内容-星号（例如：这是斜体）" class="headerlink" title="格式：星号+内容+星号（例如：这是斜体）"></a>格式：星号+内容+星号（例如：<em>这是斜体</em>）</h3><h2 id="6、粗体"><a href="#6、粗体" class="headerlink" title="6、粗体"></a>6、粗体</h2><h3 id="格式：-双星号-内容-双星号（例如：这是粗体）"><a href="#格式：-双星号-内容-双星号（例如：这是粗体）" class="headerlink" title="格式： 双星号+内容+双星号（例如：这是粗体）"></a>格式： 双星号+内容+双星号（例如：<strong>这是粗体</strong>）</h3><h2 id="7、标签"><a href="#7、标签" class="headerlink" title="7、标签"></a>7、标签</h2><h3 id="格式：英文状态下的-键三次-输入内容-英文状态下的-键三次（例如："><a href="#格式：英文状态下的-键三次-输入内容-英文状态下的-键三次（例如：" class="headerlink" title="格式：英文状态下的~键三次+输入内容+英文状态下的~键三次（例如： "></a>格式：英文状态下的~键三次+输入内容+英文状态下的~键三次（例如： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"> &lt;h1&gt;这是h1标签&lt;/h1&gt;</span><br><span class="line"> &lt;p&gt;这是h1标签&lt;/p&gt;</span><br></pre></td></tr></table></figure></h3><h2 id="8、列表"><a href="#8、列表" class="headerlink" title="8、列表"></a>8、列表</h2><h3 id="格式：-表名（-与表名有空格）"><a href="#格式：-表名（-与表名有空格）" class="headerlink" title="格式：## 表名（#与表名有空格）"></a>格式：## 表名（#与表名有空格）</h3><h3 id="xx-xx-xx-xx-xx"><a href="#xx-xx-xx-xx-xx" class="headerlink" title="xx|xx|xx|xx|xx"></a>xx|xx|xx|xx|xx</h3><h3 id="-1"><a href="#-1" class="headerlink" title="-|-|-|-|-"></a>-|-|-|-|-</h3><h4 id="【例如："><a href="#【例如：" class="headerlink" title="【例如："></a>【例如：</h4><h2 id="学生名单"><a href="#学生名单" class="headerlink" title="学生名单"></a>学生名单</h2><table>
 <thead>
